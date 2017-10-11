@@ -56,8 +56,8 @@
    - `sudo chmod 700 /root/.ssh`
    - `sudo chmod 600 /root/.ssh/authorized_keys`
 - 重启服务：`sudo service sshd restart`
-注意：CentOS7重启服务和之前的不一样了
-`sudo systemctl  restart sshd.service`
+- 注意：CentOS7重启服务和之前的不一样了
+- `sudo systemctl  restart sshd.service`
 - 设置 SSH 服务默认启动：`sudo sysv-rc-conf ssh on`
 - 现在 SSH 客户端可以去拿着 SSH 服务器端上的 id_rsa，在客户端指定秘钥文件地址即可，这个一般由于你使用的客户端决定的，我这里推荐的是 Xshell 软件。
 
